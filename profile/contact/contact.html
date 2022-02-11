@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <div id="contents-page">
+        <header>
+            <img src="../contact/triangle.png" alt="triangle" width="130">
+            <div id="pic-box"></div>
+        </header>
+        <h1 style="text-align:center;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',
+         Arial, sans-serif;font-size: 50px;color: aqua; padding-top: 5px; ">Private Contact</h1>
+        <center><div id="add-contacts">
+            <i class="fa fa-plus-circle" id="add-icon"></i>
+            
+                <form id="add-form">
+                <input type="text" name="fullname" id="fullname" placeholder="fullname"><br><br><br>
+                <input type="text" name="fmobile" id="pnum" placeholder="Primary number" maxlength="10" minlength="10"><br><br><br>
+                <input type="text" name="smobile" id="snum" placeholder="secondary number" minlength="10" maxlength="10" required><br><br>
+                <input type="button" value="Add" id="btn" onclick="add_contacts();">
+                <center><span id="saved" style="font-family: sans-serif;
+                    font-weight: bold; display: none;  ">
+                    Saved Successfully !</span>
+                </center>
+
+            </center>
+        </form>
+
+        </div>
+        <div id="contact-bar">
+            <h2 style=" font-size: 30px; font-family: sans-serif; color: red; padding-top: 10px; padding-left: 15px;" id="c-list">
+                Contact List</h2>
+           <br> <form>
+                <input type="search" placeholder="search contact here...." id="search">
+            </form>
+            <div id="contacts">
+                <i class="fa fa-trash" id="delete_icon"></i>
+                
+
+            </div>
+
+            <!-- <div id="contact-list">
+                
+            </div> -->
+        </div>
+    </div>
+    <script src="../script/script.js"></script>
+</body>
+</html>

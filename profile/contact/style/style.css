@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0 ;
+}
+
+#pic-box{
+    width: 100px;
+    height: 100px;
+    border: 5px solid grey;
+    margin-top: -7%;
+    z-index: 2px;
+    position: relative;
+    border-radius: 50%;
+    left: 7px;
+    top: -10px;
+}
+
+#add-contacts{
+    width: 350px;
+    height: 280px;
+    margin-top: 25px;
+    border-bottom: 2px solid #FF7466;
+    border-left: 2px solid #FF7466;
+
+}
+#fullname , #pnum , #snum{
+    width: 300px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 0px 0px grey;
+    padding: 5px;
+    border-left: 4px solid aqua;
+
+    
+}
+#add-icon{
+    font-size: 30px;
+    color: #FF7466;
+    position: relative;
+    left: -50%;
+    top: -8%;
+}
+#btn{
+    width: 100px;
+    height: 30px;
+    background-color: yellow;
+    margin-top: -5px;
+    margin-left: 57%;
+}
+#contact-bar
+{
+    width: 350px;
+    height: 100vh;
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow: scroll;
+    background-color: black;
+}
+#search{
+    width: 230px;
+    height: 30px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px grey;
+    color: #fff;
+    padding: 10px;
+    margin-left: 5%;
+}
+#contacts{
+    width: 300px;
+    height: 100vh;
+   
+    margin-left: 5%;
+    margin-top: 15px;
+    color: yellow;
+    font-size: 30px;
+
+}
+#delete_icon{
+    cursor: pointer;
+    
+}
