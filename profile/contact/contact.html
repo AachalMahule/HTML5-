@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +8,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="style/style.css">
     <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
+
 <body>
     <div id="contents-page">
         <header>
@@ -19,40 +20,63 @@
         </header>
         <h1 style="text-align:center;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',
          Arial, sans-serif;font-size: 50px;color: aqua; padding-top: 5px; ">Private Contact</h1>
-        <center><div id="add-contacts">
-            <i class="fa fa-plus-circle" id="add-icon"></i>
-            
+        <center>
+            <div id="add-contacts">
+                <i class="fa fa-plus-circle" id="add-icon"></i>
+
                 <form id="add-form">
-                <input type="text" name="fullname" id="fullname" placeholder="fullname"><br><br><br>
-                <input type="text" name="fmobile" id="pnum" placeholder="Primary number" maxlength="10" minlength="10"><br><br><br>
-                <input type="text" name="smobile" id="snum" placeholder="secondary number" minlength="10" maxlength="10" required><br><br>
-                <input type="button" value="Add" id="btn" onclick="add_contacts();">
-                <center><span id="saved" style="font-family: sans-serif;
+                    <input type="text" name="fullname" id="fullname" placeholder="fullname"><br><br><br>
+                    <input type="text" name="fmobile" id="pnum" placeholder="Primary number" maxlength="10" minlength="10"><br><br><br>
+                    <input type="text" name="smobile" id="snum" placeholder="secondary number" minlength="10" maxlength="10" required><br><br>
+                    <input type="button" value="Add" id="btn" onclick="add_contacts();">
+                    <center><span id="saved" style="font-family: sans-serif;
                     font-weight: bold; display: none;  ">
                     Saved Successfully !</span>
-                </center>
+                    </center>
 
-            </center>
+        </center>
         </form>
 
         </div>
         <div id="contact-bar">
             <h2 style=" font-size: 30px; font-family: sans-serif; color: red; padding-top: 10px; padding-left: 15px;" id="c-list">
                 Contact List</h2>
-           <br> <form>
-                <input type="search" placeholder="search contact here...." id="search">
+            <br>
+            <form>
+                <input type="search" placeholder="search contact here...." id="search" oninput="search_contact(this)">
             </form>
             <div id="contacts">
-                <i class="fa fa-trash" id="delete_icon"></i>
-                
+
+
 
             </div>
 
-            <!-- <div id="contact-list">
-                
-            </div> -->
+        </div>
+
+        <div id="contact-footer">
+            <span style="float:left; cursor:pointer" onclick="logout()"><i class="fa fa-sign-out"></i> Logout</span>
+            <span style="float:left; cursor:pointer" onclick="restore_contact()"><i class="fa fa-sign-out"></i> Restore contact</span>
+        </div>
+
+        <div id="restore-contacts">
+            <h1 id="restore-notice" align="center" style="color: aqua; font-size: 70px; font-family: sans-serif;">Delete Contact</h1><br>
+            <center>
+                <table width="80%" align="center" id="restore-table">
+                    <tr>
+                        <th>Conntact Name</th>
+                        <th>First Number</th>
+                        <th>Second Number</th>
+                        <th>Restore Now</th>
+                    </tr>
+
+                </table>
+            </center>
+            <i class="fa fa-times-circle" style="position:absolute;right: 20px; top: 40px; font-size: 25px; 
+            color: red;" onclick="this.parentElement.style.height='0'"></i>
+
         </div>
     </div>
-    <script src="../script/script.js"></script>
+    <script src="script/script.js"></script>
 </body>
+
 </html>

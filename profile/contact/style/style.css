@@ -1,10 +1,10 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
-    margin:0 ;
+    margin: 0;
 }
 
-#pic-box{
+#pic-box {
     width: 100px;
     height: 100px;
     border: 5px solid grey;
@@ -16,15 +16,17 @@
     top: -10px;
 }
 
-#add-contacts{
+#add-contacts {
     width: 350px;
     height: 280px;
     margin-top: 25px;
     border-bottom: 2px solid #FF7466;
     border-left: 2px solid #FF7466;
-
 }
-#fullname , #pnum , #snum{
+
+#fullname,
+#pnum,
+#snum {
     width: 300px;
     height: 40px;
     background-color: #fff;
@@ -32,54 +34,87 @@
     box-shadow: 0px 0px 0px 0px grey;
     padding: 5px;
     border-left: 4px solid aqua;
-
-    
 }
-#add-icon{
+
+#add-icon {
     font-size: 30px;
     color: #FF7466;
     position: relative;
     left: -50%;
     top: -8%;
 }
-#btn{
+
+#btn {
     width: 100px;
     height: 30px;
     background-color: yellow;
     margin-top: -5px;
     margin-left: 57%;
 }
-#contact-bar
-{
+
+#contact-bar {
     width: 350px;
     height: 100vh;
-    
     position: fixed;
     top: 0;
     right: 0;
     overflow: scroll;
     background-color: black;
 }
-#search{
+
+#search {
     width: 230px;
     height: 30px;
     border: 1px solid #ccc;
     box-shadow: 1px 1px 1px grey;
-    color: #fff;
+    background-color: #ccc;
+    color: black;
     padding: 10px;
     margin-left: 5%;
 }
-#contacts{
+
+#contacts {
     width: 300px;
     height: 100vh;
-   
-    margin-left: 5%;
+    margin-left: 10%;
     margin-top: 15px;
     color: yellow;
-    font-size: 30px;
-
+    font-size: 25px;
 }
-#delete_icon{
+
+#delete_icon {
     cursor: pointer;
-    
+    float: right;
+    margin-right: 5%;
+    font-size: 20px;
+}
+
+#restore-table {
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+#restore-contacts {
+    width: 77%;
+    height: 0;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#contact-footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    float: left;
+    margin-right: 5%;
+    font-size: 18px;
+}
+
+#restore-table th,
+#restore-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
 }

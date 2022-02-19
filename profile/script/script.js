@@ -77,7 +77,7 @@ function showing_pic_name()
     var user_mail = sessionStorage.getItem("user_mail");
     var udetail = localStorage.getItem(user_mail);
     var user_data = JSON.parse(udetail);
-    var fullname= user_data.username;
+    var fullname= user_data.name;
     username.innerHTML= fullname;
 
     var pic_box = document.getElementById("profile-pic");
@@ -90,10 +90,10 @@ showing_pic_name()
 
 //logout coding
 function logout()
-{
+{alert();
     sessionStorage.clear();
     document.getElementById("profile-notice").style.display="block";
     setTimeout(function(){
-        window.location="../index.html";
+        window.location="../../index.html";
     },2000);
 }
