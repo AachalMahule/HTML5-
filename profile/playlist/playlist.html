@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>playlist</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css">
+    <link href="https://fonts.googleapis.com/css?family=" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <center>
+
+        <div id="container">
+            <header id="header" style="font-size: 40px; font-family: sans-serif; color: brown; font-weight: bold; float: left;">vedio player
+                <i class="fa fa-share" title="share" style="float: right; padding: 12px;"></i>
+                <i class="fa fa-thumbs-o-down" style="float: right; padding: 12px;"></i>
+                <i class="fa fa-thumbs-o-up" style="float: right; padding: 12px;"></i>
+
+            </header>
+            <section>
+                <video id="vedio-box">
+                    <source src="a.mp4" id="vedio-source"></source>
+                </video>
+                <div id="playlist">
+                    <div id="playlist-header">Favourite Song <i class="fa fa-pluse-circle" title="Add to playlist" style="position: relative;"></i> </div><br>
+
+                    <ol>
+                        <li>Introduction to html </li><br>
+                        <li>Introduction to html </li><br>
+                        <li>Introduction to html </li><br>
+                        <li>Introduction to html </li><br>
+                        <li>Introduction to html </li><br>
+                        <li>Introduction to html </li><br>
+                        <li>Introduction to html </li><br>
+                        <li>Introduction to html </li><br>
+                        <li>Introduction to html </li><br>
+                        <li>Introduction to html </li><br>
+                        <li>Introduction to html </li><br>
+                        <li>Introduction to html </li><br>
+
+
+                    </ol>
+
+                </div>
+
+                <div id="controls1">
+                    <div id="controls">
+                        <i class="fa fa-stop-circle" title="stop" id="stop-icon"></i>
+                        <i class="fa fa-backward" title="backward" id="backward-icon"></i>
+                        <i class="fa fa-play" title="play" id="play-icon"></i>
+
+                        <i class="fa fa-forward" title="forward" id="forward-icon"></i>
+                        <i class="fa fa-repeat" title="Repeat" id="repeat-icon"></i>
+                        <div id="progress-bar">
+                            <div id="buffer-progress"></div>
+                            <div id="progress"></div>
+
+                        </div>
+                        <div id="setting-con">
+                            <div id="setting-app">
+                                <p>Speed : <span id="show-speed">1</span>
+                                    <button id="reset-speed" style="height: 20px; color: brown; width: 50px; background: #fff;">Reset</button>
+                                </p>
+
+
+                                <input type="range" min="0" max="10" step="0.1" id="speed-slider" value="1" style="padding: 5px;">
+                                <ul>
+                                    <li id="miniplayer-icon">
+                                        <i class="fa fa-clone" style="font-size: 20px;">Mini Player</i>
+                                    </li>
+                                    <li><input type="color" id="container-theme">&nbsp;Container th</li>
+                                    <li>
+                                        <input type="color" id="icon-theme">&nbsp;Icon Theme
+                                    </li>
+                                    <li>
+                                        <input type="color" id="text-theme">&nbsp;Text Theme
+                                    </li>
+                                </ul>
+                                <button id="reset-themes" style="width: 100px; height: 30px; padding: 5px; background: #fff;
+                            margin-top: 8px; ">Reset Theme</button>
+
+                            </div>
+                            <i class="fa fa-cog" title="settings" style="float: left; padding: 7px; font-size: 25px;
+                        margin-left: 8px;"></i>
+
+                        </div>
+
+                        <div id="volume-bar">
+                            <i class="fa fa-volume-up home" title="volume" id="volume-icon"></i>
+                            <input type="range" min="0" max="1" id="volume-slider" step="0.1" style=" margin-left: 300px;
+                        display: none;">
+
+                        </div>
+                        <div id="download-icon">
+                            <i class="fa fa-download" title="download" style="float: left; padding: 7px; font-size: 25px;
+                        margin-left: 8px;"></i>
+
+                        </div>
+
+                        <i class="fa fa-desktop" title="Fullscreen" id="fullscreen"></i>
+
+                    </div>
+                </div>
+        </div>
+        </section>
+        <div id="miniplayer">
+            <h2></h2>
+            <i class="fa fa-clone" id="close-icon" style="float: right;color:black;"></i>
+            <video id="mini-vedio-player">
+                <source id="minivedio-source"></source>
+
+            </video>
+        </div>
+
+
+    </center>
+    <script src="script.js"></script>
+</body>
+
+</html>

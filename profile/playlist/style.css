@@ -1,0 +1,210 @@
+@charset "utf-8";
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 1280px;
+    height: auto;
+    border: 1px solid black;
+    margin-top: 85px;
+    float: left;
+    margin-left: 8%;
+}
+
+header {
+    width: 1278px;
+    height: 60px;
+    text-align: center;
+    background-color: aqua;
+    float: left;
+}
+
+#vedio-box {
+    height: 540px;
+    width: 960px;
+    float: left;
+    border: 1px solid red;
+}
+
+#playlist {
+    width: 318px;
+    height: 540px;
+    background: #fff;
+    float: right;
+    padding: 5px;
+    overflow: scroll;
+}
+
+li {
+    border-bottom: 1px solid black;
+    font-size: 20px;
+}
+
+#playlist-header {
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: crimson;
+    font-weight: bold;
+}
+
+#controls1 {
+    width: 959px;
+    height: auto;
+    border: 1px solid green;
+    float: left;
+    padding: 9px;
+}
+
+#play-icon,
+#stop-icon,
+#repeat-icon,
+#forward-icon,
+#backward-icon {
+    float: left;
+    margin: 5px;
+    font-size: 25px;
+}
+
+#progress-bar {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0px 0px 0px #ccc;
+    height: 40px;
+    width: 600px;
+    position: relative;
+    margin-top: -2px;
+    float: left;
+    margin-left: 5px;
+    padding: 4px;
+}
+
+#progress {
+    background-color: black;
+    height: 100%;
+    float: left;
+    position: absolute;
+}
+
+#buffer-progress {
+    height: 100%;
+    position: absolute;
+}
+
+#volume-bar {
+    float: left;
+    font-size: 25px;
+    padding: 7px;
+    position: relative;
+}
+
+#fullscreen {
+    float: left;
+    font-size: 25px;
+    padding: 7px;
+}
+
+#volume-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+    right: -25px;
+    bottom: 80px;
+    transform: rotate(270deg);
+    width: 80px;
+    height: 5px;
+    background: white;
+    box-shadow: 0px 0px 5px red;
+    z-index: 1000;
+}
+
+#volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 18px;
+    width: 18px;
+    box-shadow: 0px 0px 5px black;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+#volume-slider::-moz-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 18px;
+    width: 18px;
+    box-shadow: 0px 0px 5px black;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+#volume_slider:focus {
+    outline: none;
+}
+
+#setting-con {
+    position: relative;
+    float: left;
+}
+
+#setting-app {
+    position: absolute;
+    width: 200px;
+    height: 0;
+    bottom: 40px;
+    background-color: #f5f5f5;
+    padding: 0px 15px;
+    color: black;
+    overflow: hidden;
+    /* border-left: 2px solid yellow; */
+}
+
+#setting-app p {
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+li {
+    font-size: 16px;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+nbsp {
+    font-size: 10px;
+}
+
+#speed-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 1px;
+    width: 130px;
+    box-shadow: 0px 0px 5px black;
+    background-color: black;
+}
+
+#miniplayer {
+    width: 420px;
+    height: 350px;
+    overflow: hidden;
+    /* background: #f5f5f5; */
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    right: 10px;
+    padding: 10px;
+    border: 1px solid red;
+    margin-top: 25px;
+    display: none;
+    background-size: cover;
+}
+
+
+/* <div id="volume-bar" style="position:relative;width:100px; ">
+                        <i class="fa fa-volume-up home" title="volume" id="volume-icon" style="font-size:25px ;padding: 8px; margin-left: 325px;
+                         padding: 8px;"></i>
+                        <input type="range" min="0" max="1" id="volume-slider" step="0.1" style="display: none; margin-left: 300px;">
+
+                    </div> */
