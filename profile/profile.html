@@ -1,67 +1,69 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>profile page</title>
 </head>
+
 <body>
     <div id="profile-page">
-         <div id="app-content"> 
-        <header>
-            <h1 id="profile-name"></h1>
-            <div id="profile-pic"></div>
-            <ul id="app-menu">
-                <li id="menu"><a href="#"><i class="fa fa-briefcase" style="font: size 30px;color:black;"></i><br>BUSSINESS</a></li>
-                <li id="menu"><a href="#"><i class="fa fa-pencil" style="font: size 30px;color:black;"></i><br>ABOUT ME</a></li>
-                <li id="menu"><a href="../profile/contact/contact.html"><i class="fa fa-phone" style="font: size 30px;color:black;"></i><br>CONTACT</a></li>
-                <li id="menu"><a href="#"><i class="fa fa-play" style="font: size 30px;color:black;"></i><br>PLAYLIST</a></li>
-                <li id="menu"><a href=""><i class="fa fa-sign-out" style="font: size 30px;color:black;" onclick="logout()"></i><br>LOG-OUT</a></li>
+        <div id="app-content">
+            <header>
+                <h1 id="profile-name"></h1>
+                <div id="profile-pic"></div>
+                <ul id="app-menu">
+                    <li id="menu"><a href="../profile/bussiness/index.html"><i class="fa fa-briefcase" style="font: size 30px;color:black;"></i><br>BUSSINESS</a></li>
+                    <li id="menu"><a href="#"><i class="fa fa-pencil" style="font: size 30px;color:black;"></i><br>ABOUT ME</a></li>
+                    <li id="menu"><a href="../profile/contact/contact.html"><i class="fa fa-phone" style="font: size 30px;color:black;"></i><br>CONTACT</a></li>
+                    <li id="menu"><a href="../profile/playlist/playlist.html"><i class="fa fa-play" style="font: size 30px;color:black;"></i><br>PLAYLIST</a></li>
+                    <li id="menu"><a href=""><i class="fa fa-sign-out" style="font: size 30px;color:black;" onclick="logout()"></i><br>LOG-OUT</a></li>
 
-            </ul>
-        </header>
-        <footer>
-            <div id="logo">
-                <img src="images/logo.png" alt="logo" width="70px" id="img-logo">
-                <h4>SAFE_DOC</h4>
-                <h1 id="profile-notice" style="display: none; color: brown;" >Please notice......!</h1>
-            </div>
-        </footer>
+                </ul>
+            </header>
+            <footer>
+                <div id="logo">
+                    <img src="images/logo.png" alt="logo" width="70px" id="img-logo">
+                    <h4>SAFE_DOC</h4>
+                    <h1 id="profile-notice" style="display: none; color: brown;">Please notice......!</h1>
+                </div>
+            </footer>
 
-    </div>
+        </div>
 
-   
 
-        
+
+
 
     </div>
 
     <div id="profile-bg">
-            <div id="pic-upload">
-                <center>
-                    <img src="../images/logo.png" alt="logo" id="logo">
-                    <h1 id="app_name" style="color: bisque;"> SAFE_DOC</h1>
-                </center>
-                <div id="upload-btn">
-                    <i class="fa fa-upload" id="upload-icon">
+        <div id="pic-upload">
+            <center>
+                <img src="../images/logo.png" alt="logo" id="logo">
+                <h1 id="app_name" style="color: bisque;"> SAFE_DOC</h1>
+            </center>
+            <div id="upload-btn">
+                <i class="fa fa-upload" id="upload-icon">
                     </i>
-                    <p style="font-size: 40px;color:black;margin-left: 20px">upload</p>
-                    <input type="file" accept="image/*"  id="profile-pic-upload" onchange="upload_pic()">
+                <p style="font-size: 40px;color:black;margin-left: 20px">upload</p>
+                <input type="file" accept="image/*" id="profile-pic-upload" onchange="upload_pic()">
 
-                </div>
-                <h1 id="welcome"></h1>
-                <i class="fa fa-forward" id="nexticon" style="display: none;"> </i>
             </div>
+            <h1 id="welcome"></h1>
+            <i class="fa fa-forward" id="nexticon" style="display: none;"> </i>
         </div>
+    </div>
 
 
     <script src="script/script.js"></script>
-    
+
 </body>
+
 </html>

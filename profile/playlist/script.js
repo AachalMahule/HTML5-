@@ -286,7 +286,22 @@ active_theme();
 //vedio buffering coding
 
 vedio.onprogress = function() {
-    var percentage = (vedio.buffered.end(0) / vedio.duration) * 100;
-    var buffer = document.getElementById("buffer-progress").style.width = percentage + '%';
-    buffer.style.width = percentage + '%';
+        var percentage = (vedio.buffered.end(0) / vedio.duration) * 100;
+        var buffer = document.getElementById("buffer-progress").style.width = percentage + '%';
+        buffer.style.width = percentage + '%';
+    }
+    //show vedio upload
+if (vedio.networkState == 3) {
+    vedio.setAttribute("poster", "upload_pic.jpg");
+    var upload_btn = document.getElementById("upload-video");
+    upload_btn.click();
+    upload_btn.onchange = function() {
+        var url = URL.createObjectURL(this.file[0]);
+        var play_source = document.getElementById("player-source");
+        play_source.src = url;
+        vedio.load();
+        vedio.play();
+
+
+    }
 }
